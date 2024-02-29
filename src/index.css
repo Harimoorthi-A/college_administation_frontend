@@ -1,13 +1,279 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.caroussel {
+    background-image: url('https://i.postimg.cc/SKzmfbK2/CEA-homeslider-3-1.jpg');
+    background-repeat: no-repeat;
+    height: 81vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #15161a;
+    background-blend-mode: overlay;
+
+}
+
+.caroussel-sub {
+    width: 100%;
+    height: 81vh;
+    opacity: 0.9;
+    color: white;
+
+}
+
+.caroussel-sub-text {
+    padding-top: 20%;
+    font-weight: bolder;
+    animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(1%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-3 {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-3:hover:before {
+    height: 100%;
+}
+
+.btn-3:hover:after {
+    width: 100%;
+}
+
+.btn-3 span:hover {
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-3 span:hover:before {
+    height: 100%;
+}
+
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 550px;
+}
+
+.card-image {
+    width: 100%;
+    padding: 8px;
+    transition: 0.5s all ease-in-out;
+}
+
+.card:hover .card-image {
+    transform: scale(0.9);
+}
+
+.gradient-section {
+    background-image: url('https://i.postimg.cc/Hnytd8w4/9WYxT.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: 81vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.gradient-section-box {
+    width: 300px;
+    /* min-height: 300px; */
+    background-color: white;
+    margin-left: 25px;
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+}
+
+.gradient-section-box2 {
+    width: 300px;
+    min-height: 200px;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: ease-in-out 2ms;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gradient-section-box2:hover {
+    transform: perspective(1.2);
+    cursor: pointer;
+}
+
+.land-students {
+    background-image: url('https://i.postimg.cc/QdydH8Wy/video-bg.jpg');
+    background-repeat: no-repeat;
+    min-height: 41vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.land-students-sub {
+    min-height: 41vh;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.land-students-icons {
+    margin-top: 10%;
+    color: white;
+}
+
+.auth-page {
+    height: 81vh;
+    width: 100%;
+}
+
+
+#left-auth {
+    position: relative;
+    animation-name: slider-left;
+    animation-duration: 4s;
+}
+
+@keyframes slider-left {
+
+    0% {
+        left: -200px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.admission-page {
+    width: 100%;
+}
+
+.student-page {
+    width: 100%;
+    min-height: 81vh;
+}
+
+.admin-card {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    transition: ease-in-out 2ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
 }

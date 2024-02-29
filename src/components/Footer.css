@@ -1,0 +1,22 @@
+/* #125091 */
+/* #226ba6 */
+.footer {
+    background-color: #125091;
+    color: white;
+    padding: 25px;
+    width: 100%;
+}
+
+.p-text:hover {
+    color: rgb(12, 202, 186);
+    cursor: pointer;
+    transform: scaleX(0.9);
+    transition: ease-in-out 10ms;
+}
+
+.sub-footer{
+    background-color: #226ba6;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}

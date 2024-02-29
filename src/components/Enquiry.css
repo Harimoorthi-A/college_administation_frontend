@@ -1,0 +1,15 @@
+.enquiry-page{
+    height: 81vh;
+    width: 100%;
+}
+
+.enq-box{
+    width: 500px;
+    min-height: 115px;
+    border: solid 1px rgb(218, 208, 208);
+    padding: 10px;
+}
+
+.dropbtn-dots{
+    background-color: white;
+}
